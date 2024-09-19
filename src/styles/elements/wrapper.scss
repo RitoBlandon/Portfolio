@@ -3,7 +3,17 @@
    ========================================================================== */
 
 .wrapper {
-    max-width: $breakpoint-lg;
+    max-width: $breakpoint-xl;
+    width: calc(100% - var(--spacing-xxl));
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    @media screen and (max-width: $breakpoint-lg) {
+        width: calc(100% - var(--spacing-xxl));
+    }
+    @media screen and (max-width: 1225px) {
+        width: calc(100% - var(--spacing-xl));
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        width: calc(100% - var(--spacing-lg));
+    }
 }
