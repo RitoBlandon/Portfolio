@@ -1,0 +1,15 @@
+.cards {
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card_media {
+            width: 467px;
+            height: 486px;
+            overflow: hidden;
+            display: block;
+            object-fit: cover;
+        }
+    }
+}
