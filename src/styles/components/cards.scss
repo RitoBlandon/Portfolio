@@ -1,15 +1,66 @@
 .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
     .card {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100%;
 
         .card_media {
-            width: 467px;
-            height: 486px;
             overflow: hidden;
-            display: block;
+
             object-fit: cover;
+            z-index: 1;
+            img {
+                width: 840px;
+                height: 500px;
+                display: block;
+            }
+        }
+
+        .card_content {
+            z-index: 2;
+            background-color: blue;
+            width: 675px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+
+            .titre_projnet {
+                margin: 0;
+                padding: 40px 0 16px 32px;
+                font-size: 28px;
+            }
+
+            .sous_titre_projets {
+                padding-bottom: 40px;
+                font-size: 24px;
+            }
+            .infos_projets {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 32px;
+                align-items: center;
+            }
+
+            .projets_texte {
+                padding-bottom: 130px;
+                font-size: 18px;
+            }
+
+            p {
+                padding-left: 32px;
+            }
+        }
+
+        .card_content_gauche {
+            transform: translateX(20%);
+        }
+        .card_content_droite {
+            transform: translateX(-20%);
         }
     }
 }
