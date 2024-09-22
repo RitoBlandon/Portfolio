@@ -32,6 +32,10 @@
             color: var(--color-white);
             position: relative;
 
+            @media screen and(max-width: $breakpoint-lg) {
+                width: 520px;
+                height: 380px;
+            }
             .plus_infos {
                 --bar-height: 5px;
                 --bar-width: 22px;
@@ -64,10 +68,9 @@
                 }
             }
 
-            .titre_projnet {
+            .titre_projet {
                 margin: 0;
                 padding: 40px 0 16px 32px;
-                font-size: 28px;
             }
 
             .sous_titre_projets {
