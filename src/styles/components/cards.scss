@@ -3,12 +3,16 @@
     flex-direction: column;
     justify-content: center;
     gap: 80px;
+
     .card {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         text-decoration: none;
+        @media screen and (max-width: $breakpoint-md) {
+            flex-direction: column-reverse;
+        }
 
         .card_media {
             overflow: hidden;
@@ -19,6 +23,9 @@
                 width: 840px;
                 height: 500px;
                 display: block;
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 100%;
+                }
             }
         }
 
@@ -31,10 +38,14 @@
             flex-direction: column;
             color: var(--color-white);
             position: relative;
+            padding-top: 40px;
 
-            @media screen and(max-width: $breakpoint-lg) {
-                width: 520px;
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 50%;
                 height: 380px;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                width: 100%;
             }
             .plus_infos {
                 --bar-height: 5px;
@@ -48,10 +59,14 @@
                 padding: 0;
                 position: absolute;
                 width: 50px;
-                height: 50px;
-                z-index: 10;
+
+                z-index: 3;
                 left: 96%;
                 top: 50%;
+                @media screen and (max-width: $breakpoint-md) {
+                    left: 50%;
+                    top: -5%;
+                }
 
                 .bar {
                     background-color: var(--color-white);
@@ -70,11 +85,11 @@
 
             .titre_projet {
                 margin: 0;
-                padding: 40px 0 16px 32px;
+                padding: 0 0 16px 32px;
             }
 
             .sous_titre_projets {
-                padding-bottom: 40px;
+                padding-bottom: 35px;
                 font-size: 24px;
             }
             .infos_projets {
@@ -87,6 +102,9 @@
             .projets_texte {
                 padding-bottom: 115px;
                 font-size: 18px;
+                @media screen and (max-width: $breakpoint-lg) {
+                    padding-bottom: 80px;
+                }
             }
 
             p {
@@ -95,14 +113,27 @@
         }
 
         .card_content_gauche {
-            transform: translateX(20%);
+            transform: translateX(5%);
             border: 4px solid black;
             box-shadow: 5px 3px #212429, -1em 0 0.4em black;
+            @media screen and (max-width: $breakpoint-md) {
+                transform: translateX(0);
+                box-shadow: none;
+            }
         }
         .card_content_droite {
-            transform: translateX(-20%);
+            transform: translateX(-5%);
             border: 4px solid black;
             box-shadow: 12px 12px 2px 1px #212429;
+            @media screen and (max-width: $breakpoint-md) {
+                transform: translateX(0);
+                box-shadow: none;
+            }
+        }
+    }
+    .card_inverse {
+        @media screen and (max-width: $breakpoint-md) {
+            flex-direction: column !important;
         }
     }
 }
