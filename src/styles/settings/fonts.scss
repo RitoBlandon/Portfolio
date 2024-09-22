@@ -7,9 +7,10 @@
     --font-secondary: 'PT Sans', sans-serif;
 
     --font-size-content: 1.8rem;
+    --font-size-sous-titre-hero: #{typo(28px, 48px)};
 
     /// Grosseur des textes
-    --font-size-h1: 62px;
+    --font-size-h1: #{typo(36px, 62px)};
     --font-size-h2: 7rem;
     --font-size-h3: 3.5rem;
     --font-size-h4: #{typo(24px, 28px)};

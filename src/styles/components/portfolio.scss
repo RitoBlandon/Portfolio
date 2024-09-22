@@ -1,0 +1,54 @@
+footer {
+    background-color: #03306c;
+    height: 100%;
+    padding: 100px 0;
+
+    .wrapper {
+        .footer_sega {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 160px;
+            .image_logo_footer {
+                height: 100%;
+
+                object-fit: cover;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+            }
+        }
+
+        .infos_footer {
+            padding-top: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 36px;
+            color: var(--color-white);
+
+            .footer_texte {
+                width: 35vw;
+            }
+        }
+
+        .info_lettre {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 32px;
+            @media screen and (max-width: $breakpoint-md) {
+                align-items: center;
+            }
+        }
+
+        .boite_inscription {
+            display: flex;
+            justify-content: flex-start;
+            background-color: white;
+            border: 2px solid black;
+            padding: 10px 225px 10px 10px;
+        }
+    }
+}
