@@ -8,6 +8,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        text-decoration: none;
 
         .card_media {
             overflow: hidden;
@@ -23,11 +24,45 @@
 
         .card_content {
             z-index: 2;
-            background-color: blue;
+            background-color: #212429;
             width: 675px;
             height: 380px;
             display: flex;
             flex-direction: column;
+            color: var(--color-white);
+            position: relative;
+
+            .plus_infos {
+                --bar-height: 5px;
+                --bar-width: 22px;
+
+                background-color: var(--color-primary);
+                aspect-ratio: 1/1;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 0;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                z-index: 10;
+                left: 96%;
+                top: 50%;
+
+                .bar {
+                    background-color: var(--color-white);
+
+                    height: var(--bar-height);
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 25%;
+                    transition: 0.3s all ease-out;
+                    &:nth-child(1) {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
 
             .titre_projnet {
                 margin: 0;
@@ -47,7 +82,7 @@
             }
 
             .projets_texte {
-                padding-bottom: 130px;
+                padding-bottom: 115px;
                 font-size: 18px;
             }
 
@@ -58,9 +93,13 @@
 
         .card_content_gauche {
             transform: translateX(20%);
+            border: 4px solid black;
+            box-shadow: 5px 3px #212429, -1em 0 0.4em black;
         }
         .card_content_droite {
             transform: translateX(-20%);
+            border: 4px solid black;
+            box-shadow: 12px 12px 2px 1px #212429;
         }
     }
 }
