@@ -12,6 +12,10 @@
         text-decoration: none;
         @media screen and (max-width: $breakpoint-md) {
             flex-direction: column-reverse;
+            .sous_titre_projets,
+            .projets_texte {
+                width: 80vw !important;
+            }
         }
 
         .card_media {
@@ -126,6 +130,12 @@
                 }
                 @media screen and (max-width: 1267px) {
                     width: 35vw;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    padding-bottom: 100px;
+                }
+                @media screen and (max-width: 636px) {
+                    padding-bottom: 70px;
                 }
             }
 
