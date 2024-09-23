@@ -23,6 +23,9 @@
 
             object-fit: cover;
             z-index: 1;
+            @media screen and (max-width: $breakpoint-md) {
+                width: 100%;
+            }
             img {
                 width: 840px;
                 height: 500px;
@@ -30,6 +33,7 @@
                 border-radius: 15px;
                 @media screen and (max-width: $breakpoint-md) {
                     width: 100%;
+                    border-radius: 0px;
                 }
             }
         }
@@ -65,7 +69,7 @@
                 position: absolute;
                 width: 50px;
 
-                z-index: 3;
+                z-index: 1;
                 left: 96%;
                 top: 45%;
                 @media screen and (max-width: $breakpoint-md) {
@@ -169,4 +173,8 @@
             flex-direction: column !important;
         }
     }
+}
+
+.cards_accueil {
+    padding-bottom: 100px;
 }

@@ -6,7 +6,7 @@ header {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 
     padding-top: 50px;
 
@@ -23,6 +23,7 @@ header {
         font-size: 56px;
         margin: 0;
         font-weight: bolder;
+        text-decoration: none;
     }
 
     .wrapper {
