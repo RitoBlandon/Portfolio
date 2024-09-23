@@ -1,5 +1,3 @@
-// importer vos composantes ici
-
 import Header from './components/Header';
 
 export default class ComponentFactory {
