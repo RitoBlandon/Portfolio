@@ -7,11 +7,20 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 60px;
 
+        @media screen and (max-width: $breakpoint-md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         .infos_personnels {
             color: var(--color-white);
             padding-left: 125px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            h4 {
+                padding-bottom: 35px;
+            }
             p {
-                font-size: 32px;
+                font-size: 28px;
             }
         }
     }
