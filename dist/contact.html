@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rito José Blandon Pinzon</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
+
+
+<body data-component="Scrolly">
+
+
+
+
+    <header class="header" data-component="Header" data-threshold="0.1">
+        <div class="wrapper">
+
+            <a class="logo" href="index.html">
+                <p>RB</p>
+            </a>
+
+            <nav class="nav-primary">
+
+
+                <ul class="menu">
+                    <li><a class="nav-item" href="mes_projets.html">Mes projets</a></li>
+                    <li><a class="nav-item" href="index.html">À propos</a></li>
+                    <li><a class="nav-item" href="contact.html">Contact</a></li>
+                </ul>
+
+
+
+            </nav>
+
+
+            <div class="hamburger header__toggle js-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </header>
+
+    <!-- Votre contenu ici -->
+
+    <section class="formulaire_contact">
+        <div class="wrapper">
+            <h1>Informations <span>personelles</span></h1>
+            <div class="grid_contact">
+                <form action="" class="form" autocomplete="off" data-component="Form">
+                    <div class="form_body">
+                        <fieldset class="grid_form">
+                            <div class="input">
+                                <label data-scrolly="fromLeft" class="input_label" for="name">Nom complet</label>
+                                <input data-scrolly="fromLeft" class="input_element" type="text" name="name" id="name" placeholder="ex: Jean Gautier" required />
+                                <p class="text_error">Vous devez remplir ce champ</p>
+                            </div>
+                            <div class="input">
+                                <label data-scrolly="fromRight" class="input_label" for="email">Courriel</label>
+                                <input data-scrolly="fromRight" class="input_element" type="text" name="email" id="email" placeholder="exemple@domaine.com" required />
+                                <p class="text_error">Vous devez remplir ce champ</p>
+                            </div>
+
+                            <div class="input">
+                                <label class="input_label" for="message">Message</label>
+                                <input data-scrolly="fromRight" class="input_element message_section" type="text" name="message" id="message" placeholder="exemple@domaine.com" required />
+                                <p class="text_error">Vous devez remplir ce champ</p>
+                            </div>
+                        </fieldset>
+
+                        <footer class="footer_form">
+                            <button data-scrolly="fromBottom" class="bouton bouton_form_footer">Envoyer</button>
+                        </footer>
+                    </div>
+                    <div class="form_confirmation">
+                        <h2 data-scrolly="fromLeft">Merci</h2>
+                        <p data-scrolly="fromRight">Votre formulaire a bien été envoyé</p>
+                    </div>
+                </form>
+                <div class="infos_personnels">
+                    <div class="telephone_rito">
+                        <h4>Téléphone</h4>
+                        <p>514-712-5776</p>
+                    </div>
+                    <div class="courriel_rito">
+                        <h4>Courriel</h4>
+                        <p>contact@ritoblandon.com</p>
+                    </div>
+                    <div class="courriel_rito">
+                        <h4>Curriculum vitae</h4>
+                        <a href="mes_projets.html" class="bouton bouton_projets">Télécharger le cv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+
+
+            <div class="infos_footer">
+
+                <p class="copyright">Rito José Blandon Pinzon © Tout droits réservés 2024</p>
+
+                <ul class="reseaux_sociaux">
+                    <li>
+                        <a class="nav-icon" href="https://www.instagram.com/" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="https://dribbble.com/" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-dribble"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="https://twitter.com/home?lang=fr" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="https://www.youtube.com/watch?v=8hFiVvMGJwQ" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

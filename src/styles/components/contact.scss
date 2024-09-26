@@ -1,0 +1,28 @@
+.formulaire_contact {
+    height: 100%;
+    padding: 100px 0;
+
+    .grid_contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+
+        .infos_personnels {
+            color: var(--color-white);
+            padding-left: 125px;
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+
+    h1 {
+        font-weight: bold;
+        margin: 0;
+        padding-bottom: 105px;
+        color: var(--color-white);
+        span {
+            color: var(--color-primary);
+        }
+    }
+}

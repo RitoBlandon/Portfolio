@@ -30,13 +30,16 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 @import 'components/header';
-@import 'components/footer';
+
 @import 'components/hero';
 @import 'components/mes_projets_accueil';
 @import 'components/mes_projets';
+@import 'components/contact';
 @import 'components/bouton';
 @import 'components/cards';
 @import 'components/icons';
+@import 'components/forms';
+@import 'components/footer';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

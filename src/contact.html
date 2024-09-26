@@ -1,0 +1,81 @@
+{% include "_partials/_header.html" %}
+
+<!-- Votre contenu ici -->
+
+<section class="formulaire_contact">
+    <div class="wrapper">
+        <h1>Informations <span>personelles</span></h1>
+        <div class="grid_contact">
+            <form action="" class="form" autocomplete="off" data-component="Form">
+                <div class="form_body">
+                    <fieldset class="grid_form">
+                        <div class="input">
+                            <label data-scrolly="fromLeft" class="input_label" for="name">Nom complet</label>
+                            <input
+                                data-scrolly="fromLeft"
+                                class="input_element"
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="ex: Jean Gautier"
+                                required
+                            />
+                            <p class="text_error">Vous devez remplir ce champ</p>
+                        </div>
+                        <div class="input">
+                            <label data-scrolly="fromRight" class="input_label" for="email">Courriel</label>
+                            <input
+                                data-scrolly="fromRight"
+                                class="input_element"
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="exemple@domaine.com"
+                                required
+                            />
+                            <p class="text_error">Vous devez remplir ce champ</p>
+                        </div>
+
+                        <div class="input">
+                            <label class="input_label" for="message">Message</label>
+                            <input
+                                data-scrolly="fromRight"
+                                class="input_element message_section"
+                                type="text"
+                                name="message"
+                                id="message"
+                                placeholder="exemple@domaine.com"
+                                required
+                            />
+                            <p class="text_error">Vous devez remplir ce champ</p>
+                        </div>
+                    </fieldset>
+
+                    <footer class="footer_form">
+                        <button data-scrolly="fromBottom" class="bouton bouton_form_footer">Envoyer</button>
+                    </footer>
+                </div>
+                <div class="form_confirmation">
+                    <h2 data-scrolly="fromLeft">Merci</h2>
+                    <p data-scrolly="fromRight">Votre formulaire a bien été envoyé</p>
+                </div>
+            </form>
+            <div class="infos_personnels">
+                <div class="telephone_rito">
+                    <h4>Téléphone</h4>
+                    <p>514-712-5776</p>
+                </div>
+                <div class="courriel_rito">
+                    <h4>Courriel</h4>
+                    <p>contact@ritoblandon.com</p>
+                </div>
+                <div class="courriel_rito">
+                    <h4>Curriculum vitae</h4>
+                    <a href="mes_projets.html" class="bouton bouton_projets">Télécharger le cv</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" %}

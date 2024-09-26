@@ -29,6 +29,7 @@
             img {
                 width: 840px;
                 height: 500px;
+                object-fit: cover;
                 display: block;
                 border-radius: 15px;
                 @media screen and (max-width: $breakpoint-md) {
