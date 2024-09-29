@@ -178,3 +178,8 @@
 .cards_accueil {
     padding-bottom: 100px;
 }
+
+.cards_competences {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
