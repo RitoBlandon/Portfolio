@@ -13,6 +13,12 @@ footer {
             @media screen and (max-width: $breakpoint-md) {
                 flex-direction: column;
             }
+            .copyright {
+                text-align: center;
+                @media screen and (max-width: $breakpoint-xs) {
+                    text-align: center;
+                }
+            }
 
             .reseaux_sociaux {
                 display: flex;
@@ -43,10 +49,6 @@ footer {
                         }
                     }
                 }
-            }
-
-            .footer_texte {
-                width: 35vw;
             }
         }
     }
