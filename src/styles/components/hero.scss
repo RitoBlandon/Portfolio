@@ -82,7 +82,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         color: var(--color-white);
-        gap: 250px;
+        gap: 175px;
+
         .hero_media {
             height: 100%;
             width: 100%;
@@ -105,6 +106,9 @@
             justify-content: center;
             width: 100%;
             height: 100%;
+            h1 {
+                width: 120% !important;
+            }
         }
     }
 }
