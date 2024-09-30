@@ -184,6 +184,9 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 115px;
     column-gap: 80px;
+    @media screen and (max-width: $breakpoint-lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .card {
         display: flex;
