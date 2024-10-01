@@ -1,0 +1,21 @@
+.video_presentation {
+    height: 100%;
+    padding: 100px 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        h1 {
+            font-weight: bold;
+            margin: 0;
+            padding-bottom: 50px;
+            color: var(--color-white);
+            span {
+                color: var(--color-primary);
+            }
+        }
+        .texte_moi {
+            color: var(--color-white);
+            width: 75%;
+        }
+    }
+}
