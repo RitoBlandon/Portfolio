@@ -6,6 +6,17 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         color: var(--color-white);
+        position: relative;
+        &:after {
+            width: 25%;
+            height: 3px;
+            content: '';
+            background: var(--color-white);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
+        }
         h2 {
             color: var(--color-white);
         }

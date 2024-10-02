@@ -9,6 +9,10 @@
 
         @media screen and (max-width: $breakpoint-md) {
             grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+            &:nth-child(2) {
+                text-align: center;
+            }
         }
         .infos_personnels {
             color: var(--color-white);
@@ -16,6 +20,10 @@
             display: flex;
             flex-direction: column;
             gap: 50px;
+            @media screen and (max-width: $breakpoint-md) {
+                text-align: center;
+                padding: 0;
+            }
             h4 {
                 padding-bottom: 35px;
             }
