@@ -29,6 +29,7 @@
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
+@import '../../node_modules/swiper/swiper-bundle';
 @import 'components/header';
 
 @import 'components/hero';
@@ -38,6 +39,7 @@
 @import 'components/competences';
 @import 'components/presentation';
 @import 'components/infos_rito';
+@import 'components/logiciels';
 @import 'components/bouton';
 @import 'components/video';
 @import 'components/cards';
