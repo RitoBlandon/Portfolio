@@ -1,8 +1,37 @@
 .resume {
     height: 100%;
-    padding: 100px 0;
+    padding: 200px 0;
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        color: var(--color-white);
+        gap: 100px;
+        h2 {
+            color: var(--color-white);
+
+            span {
+                color: var(--color-primary);
+            }
+        }
+        p {
+            font-size: 24px;
+        }
+
+        .titre-resume {
+            padding-bottom: 40px;
+        }
+        .texte_resume {
+            width: 100%;
+        }
+
+        .informations-projet {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 30px;
+            span {
+                color: var(--color-primary);
+            }
+        }
     }
 }
