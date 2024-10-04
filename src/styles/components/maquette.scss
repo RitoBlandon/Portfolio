@@ -1,0 +1,16 @@
+.maquette {
+    padding: 100px 0;
+    height: 100%;
+
+    h2,
+    p {
+        color: var(--color-white);
+    }
+
+    h2 {
+        padding-bottom: 25px;
+    }
+    p {
+        padding-bottom: 65px;
+    }
+}
