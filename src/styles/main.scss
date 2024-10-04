@@ -30,25 +30,32 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 @import '../../node_modules/swiper/swiper-bundle';
-@import 'components/header';
 
-@import 'components/hero';
-@import 'components/mes_projets_accueil';
-@import 'components/mes_projets';
-@import 'components/contact';
-@import 'components/competences';
-@import 'components/presentation';
-@import 'components/infos_rito';
-@import 'components/logiciels';
-@import 'components/resume';
-@import 'components/demo-projet';
-@import 'components/maquette';
+// Composants réutilisables.
+@import 'components/header';
+@import 'components/footer';
 @import 'components/bouton';
 @import 'components/video';
 @import 'components/cards';
 @import 'components/icons';
+// Composants  page d'accueil
+@import 'components/hero';
+@import 'components/mes_projets_accueil';
+@import 'components/mes_projets';
+// Composants page contact
+@import 'components/contact';
 @import 'components/forms';
-@import 'components/footer';
+
+// Composants page à propos
+@import 'components/competences';
+@import 'components/presentation';
+@import 'components/infos_rito';
+@import 'components/logiciels';
+// Composants page fiche-projet
+@import 'components/resume';
+@import 'components/demo-projet';
+@import 'components/maquette';
+@import 'components/integration';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
