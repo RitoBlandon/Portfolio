@@ -40,7 +40,6 @@
             font-weight: bold;
             margin: 0;
             padding: 20px 0;
-            width: 400px;
         }
 
         .info_hero {
@@ -119,6 +118,10 @@
             }
             .sous_titre_hero {
                 font-size: 24px;
+                @media screen and (max-width: $breakpoint-xs) {
+                    text-align: center;
+                    width: 100%;
+                }
             }
             .info_hero {
                 width: 45vw;
