@@ -4,6 +4,7 @@ export default class Carousel {
     this.element = element;
     this.options = {
       slidesPerView: 1,
+      spaceBetween: 40,
       pagination: {},
       navigation: {
         nextEl: this.element.querySelector('.swiper-button-next'),
