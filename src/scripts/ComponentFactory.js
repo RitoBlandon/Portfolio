@@ -2,6 +2,7 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Youtube from './components/Youtube';
 import Form from './components/Form';
+import Modale from './components/Modale';
 
 export default class ComponentFactory {
   constructor() {
@@ -11,6 +12,7 @@ export default class ComponentFactory {
       Header,
       Form,
       Youtube,
+      Modale,
     };
     this.init();
   }
