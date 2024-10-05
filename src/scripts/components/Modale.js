@@ -1,6 +1,7 @@
 export default class Modale {
   constructor(element) {
     this.element = element;
+
     this.options = {};
 
     this.html = document.documentElement;
@@ -9,16 +10,16 @@ export default class Modale {
 
   init() {
     // this.setOptions();
-    console.log('yo');
-    this.modale();
+
+    this.element.addEventListener('click', this.modale.bind(this));
   }
 
   modale() {
     // Get the modal
+    console.log('allo');
     var modal = document.getElementById('myModal');
 
     // Get the button that opens the modal
-    var btn = document.getElementById('myBtn');
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName('close')[0];
