@@ -4,7 +4,7 @@ export default class Carousel {
     this.element = element;
     this.options = {
       slidesPerView: 1,
-      spaceBetween: 40,
+      spaceBetween: 20,
       pagination: {},
       navigation: {
         nextEl: this.element.querySelector('.swiper-button-next'),
@@ -21,8 +21,9 @@ export default class Carousel {
   setOptions() {
     if ('split' in this.element.dataset) {
       this.options.breakpoints = {
-        768: { slidesPerView: 3 },
-        350: { slidesPerView: 1 },
+        1440: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 },
       };
     }
     if ('autoplay' in this.element.dataset) {
