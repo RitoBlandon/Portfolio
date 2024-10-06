@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Youtube from './components/Youtube';
 import Form from './components/Form';
 import Modale from './components/Modale';
-import Modale from './components/Scrolly';
 import Scrolly from './components/Scrolly';
 
 export default class ComponentFactory {
