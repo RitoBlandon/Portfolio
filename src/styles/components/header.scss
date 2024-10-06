@@ -144,3 +144,28 @@ header {
         }
     }
 }
+
+.underline--animation {
+    display: inline-block;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.underline--animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline--animation:hover:after {
+    color: var(--color-primary);
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
