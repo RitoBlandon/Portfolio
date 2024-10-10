@@ -22,7 +22,27 @@
 
 .swiper-code {
     img {
+        width: 100%;
+        display: block;
+
+        object-fit: cover;
         cursor: pointer;
-        height: 60vh;
+    }
+}
+
+.swiper-integration {
+    .swiper-slide {
+        height: auto;
+    }
+    .intergration_media {
+        height: 85%;
+        width: 100%;
+        object-fit: cover;
+        img {
+            display: block;
+            height: 85%;
+            object-fit: cover;
+            cursor: pointer;
+        }
     }
 }
