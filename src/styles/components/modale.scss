@@ -1,11 +1,16 @@
+.modal-image {
+    width: 200px; /* Largeur de l'image */
+    cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+}
+
 .modale-overlay {
+    display: none; /* Commencer caché */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    display: none; /* Commence caché */
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Assurez-vous que cet élément est au-dessus de tous les autres */
@@ -23,7 +28,6 @@
     max-height: 90%;
     overflow: auto;
     border-radius: 8px;
-    z-index: 1001; /* Plus élevé que l'overlay */
 }
 
 .modale-close {
@@ -34,6 +38,4 @@
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #000;
-    font-weight: bold;
 }
