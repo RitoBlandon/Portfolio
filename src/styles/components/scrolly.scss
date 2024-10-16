@@ -1,7 +1,17 @@
 /* ==========================================================================
    scrolly / component
    ========================================================================== */
+
 .has-js {
+    @keyframes reveal {
+        0% {
+            clip-path: inset(0 100% 0 0);
+        }
+        100% {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+
     [data-scrolly='flipCard'] {
         transform: rotateY(180deg);
         transition: all 0.7s ease-in-out;
@@ -35,7 +45,7 @@
 
     [data-scrolly='fromTop'] {
         opacity: 0;
-        transform: translateY-(60px);
+        transform: translateY(-60px);
         transition: all 0.4s $ease-out-expo;
         filter: blur(10px);
         &.is-active {
@@ -49,7 +59,6 @@
         opacity: 0;
         transform: translateX(60px);
         transition: all 0.4s $ease-out-expo;
-
         &.is-active {
             opacity: 1;
             transform: translateX(0);
@@ -71,11 +80,34 @@
             transform: rotate(0);
         }
     }
+
     [data-scrolly='fade'] {
         opacity: 0;
         transition: all 2s $ease-out-expo;
         &.is-active {
             opacity: 1;
+        }
+    }
+
+    /* Nouveau texte avec animation de révélation */
+    [data-scrolly='revealFromLeft'] {
+        position: relative;
+        font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
+        font-weight: bold;
+        background: linear-gradient(
+            90deg,
+            var(--color-white),
+            var(--color-white)
+        );
+        color: transparent;
+        background-clip: text;
+        display: inline-block;
+        clip-path: inset(0 100% 0 0); /* Texte caché par défaut */
+        transition: clip-path 1s ease; /* Transition pour l'effet */
+
+        &.is-active {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+            animation: reveal 3s ease forwards; /* Animation à l'activation */
         }
     }
 }
