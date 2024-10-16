@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('[data-component="Modale"]');
-  const overlay = document.querySelector('.modale-overlay');
+  const overlay = document.querySelector('.modale-content');
   const imgElement = overlay.querySelector('.modale-image');
   const closeButton = overlay.querySelector('.modale-close');
 
