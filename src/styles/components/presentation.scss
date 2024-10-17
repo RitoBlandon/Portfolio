@@ -4,6 +4,16 @@
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @media screen and (max-width: $breakpoint-md) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 75px;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            grid-template-columns: repeat(1, 1fr);
+            .texte_presentation {
+                text-align: center;
+            }
+        }
         h1 {
             font-weight: bold;
             margin: 0;
