@@ -59,7 +59,7 @@
 
     [data-scrolly='fromLeft'] {
         opacity: 0;
-        transform: translateX(-60px);
+        transform: translateX(-200px);
         transition: all 0.4s $ease-out-expo;
         &.is-active {
             opacity: 1;
@@ -81,7 +81,7 @@
 
     [data-scrolly='fromRight'] {
         opacity: 0;
-        transform: translateX(60px);
+        transform: translateX(200px);
         transition: all 0.4s $ease-out-expo;
         &.is-active {
             opacity: 1;
@@ -116,7 +116,7 @@
     /* Nouveau texte avec animation de révélation */
     [data-scrolly='revealFromLeft'] {
         position: relative;
-        font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
+        /* Ajustez la taille du texte selon vos besoins */
         font-weight: bold;
         background: linear-gradient(
             90deg,
@@ -127,11 +127,11 @@
         background-clip: text;
         display: inline-block;
         clip-path: inset(0 100% 0 0); /* Texte caché par défaut */
-        transition: clip-path 1s ease; /* Transition pour l'effet */
+        transition: clip-path 3.5s ease; /* Transition pour l'effet */
 
         &.is-active {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
-            animation: reveal 1s ease forwards; /* Animation à l'activation */
+            animation: reveal 3.5s ease forwards; /* Animation à l'activation */
         }
     }
 
@@ -148,17 +148,16 @@
         background-clip: text;
         display: inline-block;
         clip-path: inset(100% 0 0 0); /* Texte caché par défaut */
-        transition: clip-path 1s ease; /* Transition pour l'effet */
+        transition: clip-path 0.5s ease; /* Transition pour l'effet */
 
         &.is-active {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
-            animation: revealFromBottom 1s ease forwards; /* Animation à l'activation */
+            animation: revealFromBottom 0.5s ease forwards; /* Animation à l'activation */
         }
     }
-
     [data-scrolly='revealFromRight'] {
         position: relative;
-        font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
+        /* Ajustez la taille du texte selon vos besoins */
         font-weight: bold;
         background: linear-gradient(
             90deg,
@@ -190,11 +189,69 @@
         background-clip: text;
         display: inline-block;
         clip-path: inset(100% 0 0 0); /* Texte caché par défaut */
+        transition: clip-path 2s ease; /* Transition pour l'effet */
+
+        &.is-active {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+            animation: revealFromTop 2s ease forwards; /* Animation à l'activation */
+        }
+    }
+    [data-scrolly='revealSectionFromTop'] {
+        position: relative;
+        /* Ajustez la taille du texte selon vos besoins */
+        font-weight: bold;
+
+        color: transparent;
+
+        clip-path: inset(100% 0 0 0); /* Texte caché par défaut */
+        transition: clip-path 0.5s ease; /* Transition pour l'effet */
+
+        &.is-active {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+            animation: revealFromTop 0.5s ease forwards; /* Animation à l'activation */
+        }
+    }
+    [data-scrolly='revealSectionFromBottom'] {
+        position: relative;
+        /* Ajustez la taille du texte selon vos besoins */
+        font-weight: bold;
+
+        color: transparent;
+
+        clip-path: inset(100% 0 0 0); /* Texte caché par défaut */
+        transition: clip-path 0.5s ease; /* Transition pour l'effet */
+
+        &.is-active {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+            animation: revealFromBottom 0.5s ease forwards; /* Animation à l'activation */
+        }
+    }
+    [data-scrolly='revealSectionFromLeft'] {
+        position: relative;
+        /* Ajustez la taille du texte selon vos besoins */
+        font-weight: bold;
+
+        color: transparent;
+        clip-path: inset(0 100% 0 0); /* Texte caché par défaut */
         transition: clip-path 1s ease; /* Transition pour l'effet */
 
         &.is-active {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
-            animation: revealFromTop 1s ease forwards; /* Animation à l'activation */
+            animation: revealFromLeft 1s ease forwards; /* Animation à l'activation */
+        }
+    }
+    [data-scrolly='revealSectionFromRight'] {
+        position: relative;
+        /* Ajustez la taille du texte selon vos besoins */
+        font-weight: bold;
+
+        color: transparent;
+        clip-path: inset(0 0 0 100%); /* Texte caché par défaut */
+        transition: clip-path 0.5s ease; /* Transition pour l'effet */
+
+        &.is-active {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+            animation: revealFromRight 0.5s ease forwards; /* Animation à l'activation */
         }
     }
 }

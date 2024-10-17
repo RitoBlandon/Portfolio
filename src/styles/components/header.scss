@@ -1,6 +1,6 @@
 header {
-    background-color: var(--color-black);
-    position: sticky;
+    background-color: var(--color-black) !important;
+    position: sticky !important;
     padding: var(--spacing-md) 0;
     top: 0;
     left: 0;

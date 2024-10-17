@@ -16,7 +16,7 @@
 
 
 
-    <header class="header" data-component="Header" data-threshold="0.1">
+    <header class="header" data-component="Header" data-threshold="0.1" data-scrolly="revealSectionFromBottom">
         <div class="wrapper">
 
             <a class="logo" href="index.html">
@@ -58,18 +58,18 @@
     <section class="formulaire_contact">
         <div class="wrapper">
             <h1>Informations <span>personelles</span></h1>
-            <div class="grid_contact">
+            <div class="grid_contact" data-scrolly="revealSectionFromLeft">
                 <form method="post" action="https://formsubmit.co/blandonpinzon@gmail.com" class="form" autocomplete="off" data-component="Form">
                     <div class="form_body">
                         <fieldset class="grid_form">
                             <div class="input">
-                                <label data-scrolly="fromLeft" class="input_label" for="name">Nom complet</label>
-                                <input data-scrolly="fromLeft" class="input_element" type="text" name="name" id="name" placeholder="ex: Jean Gautier" required />
+                                <label class="input_label" for="name">Nom complet</label>
+                                <input class="input_element" type="text" name="name" id="name" placeholder="ex: Jean Gautier" required />
                                 <p class="text_error">Vous devez remplir ce champ</p>
                             </div>
                             <div class="input">
-                                <label data-scrolly="fromRight" class="input_label" for="email">Courriel</label>
-                                <input data-scrolly="fromRight" class="input_element" type="text" name="email" id="email" placeholder="exemple@domaine.com" required />
+                                <label class="input_label" for="email">Courriel</label>
+                                <input class="input_element" type="text" name="email" id="email" placeholder="exemple@domaine.com" required />
                                 <p class="text_error">Vous devez remplir ce champ</p>
                             </div>
 
@@ -85,11 +85,11 @@
                         </footer>
                     </div>
                     <div class="form_confirmation">
-                        <h2 data-scrolly="fromLeft">Merci</h2>
-                        <p data-scrolly="fromRight">Votre formulaire a bien été envoyé</p>
+                        <h2>Merci</h2>
+                        <p>Votre formulaire a bien été envoyé</p>
                     </div>
                 </form>
-                <div class="infos_personnels">
+                <div class="infos_personnels" data-scrolly="revealSectionFromRight">
                     <div class="telephone_rito">
                         <h4>Téléphone</h4>
                         <p>514-712-5776</p>
@@ -107,7 +107,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer data-scrolly="revealSectionFromTop">
         <div class="wrapper">
 
 

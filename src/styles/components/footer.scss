@@ -5,7 +5,7 @@ footer {
 
     .wrapper {
         .infos_footer {
-            display: flex;
+            display: flex !important;
             justify-content: space-between;
             align-items: center;
             gap: 36px;
