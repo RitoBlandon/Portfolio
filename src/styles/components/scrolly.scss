@@ -127,17 +127,17 @@
         background-clip: text;
         display: inline-block;
         clip-path: inset(0 100% 0 0); /* Texte caché par défaut */
-        transition: clip-path 3.5s ease; /* Transition pour l'effet */
+        transition: clip-path 1s ease; /* Transition pour l'effet */
 
         &.is-active {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
-            animation: reveal 3.5s ease forwards; /* Animation à l'activation */
+            animation: reveal 1s ease forwards; /* Animation à l'activation */
         }
     }
 
     [data-scrolly='revealFromBottom'] {
         position: relative;
-        font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
+
         font-weight: bold;
         background: linear-gradient(
             90deg,
@@ -178,7 +178,7 @@
 
     [data-scrolly='revealFromTop'] {
         position: relative;
-        font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
+
         font-weight: bold;
         background: linear-gradient(
             90deg,
