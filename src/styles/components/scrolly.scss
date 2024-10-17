@@ -1,4 +1,4 @@
-/* ==========================================================================
+/* ========================================================================== 
    scrolly / component
    ========================================================================== */
 
@@ -14,6 +14,22 @@
     @keyframes revealFromBottom {
         0% {
             clip-path: inset(100% 0 0 0); /* Texte caché par le bas */
+        }
+        100% {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+        }
+    }
+    @keyframes revealFromTop {
+        0% {
+            clip-path: inset(0 0 100% 0); /* Texte caché par le haut */
+        }
+        100% {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+        }
+    }
+    @keyframes revealFromRight {
+        0% {
+            clip-path: inset(0 0 0 100%); /* Texte caché par le haut */
         }
         100% {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
@@ -115,10 +131,11 @@
 
         &.is-active {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
-            animation: reveal 3s ease forwards; /* Animation à l'activation */
+            animation: reveal 1s ease forwards; /* Animation à l'activation */
         }
     }
-    [data-scrolly='revealBottom'] {
+
+    [data-scrolly='revealFromBottom'] {
         position: relative;
         font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
         font-weight: bold;
@@ -138,7 +155,29 @@
             animation: revealFromBottom 1s ease forwards; /* Animation à l'activation */
         }
     }
-    [data-scrolly='revealRight'] {
+
+    [data-scrolly='revealFromRight'] {
+        position: relative;
+        font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
+        font-weight: bold;
+        background: linear-gradient(
+            90deg,
+            var(--color-white),
+            var(--color-white)
+        );
+        color: transparent;
+        background-clip: text;
+        display: inline-block;
+        clip-path: inset(0 0 0 100%); /* Texte caché par défaut */
+        transition: clip-path 1s ease; /* Transition pour l'effet */
+
+        &.is-active {
+            clip-path: inset(0 0 0 0); /* Texte complètement révélé */
+            animation: revealFromRight 1s ease forwards; /* Animation à l'activation */
+        }
+    }
+
+    [data-scrolly='revealFromTop'] {
         position: relative;
         font-size: 2em; /* Ajustez la taille du texte selon vos besoins */
         font-weight: bold;
@@ -155,7 +194,7 @@
 
         &.is-active {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
-            animation: revealFromBottom 1s ease forwards; /* Animation à l'activation */
+            animation: revealFromTop 1s ease forwards; /* Animation à l'activation */
         }
     }
 }
