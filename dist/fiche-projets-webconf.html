@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rito José Blandon Pinzon</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
+
+
+<body data-component="Scrolly" data-no-repeat>
+
+
+
+
+    <header class="header" data-component="Header" data-threshold="0.1" data-scrolly="revealSectionFromBottom">
+        <div class="wrapper">
+
+            <a class="logo" href="index.html">
+                <p>RB</p>
+            </a>
+
+            <nav class="nav-primary">
+
+
+                <ul class="menu">
+                    <li><a class="nav-item underline--animation" href="mes-projets.html">Mes projets</a></li>
+                    <li><a class="nav-item underline--animation" href="a-propos.html">À propos</a></li>
+                    <li><a class="nav-item underline--animation" href="contact.html">Contact</a></li>
+                </ul>
+
+
+
+            </nav>
+
+
+            <div class="hamburger header__toggle js-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </header>
+
+    <section class="hero hero-fiche" data-scrolly="revealSectionFromLeft">
+        <div class="hero_media">
+            <img class="hero_fond" src="assets/images/webconf-mockup.png" alt="" />
+        </div>
+        <div class="wrapper">
+            <div class="hero_content">
+                <div class="info_hero">
+                    <h1 data-scrolly="revealFromRight">Webconf</h1>
+                    <p data-scrolly="revealFromTop" class="sous_titre_hero">
+                        Projet scolaire | Intégration et programmation web
+                    </p>
+                </div>
+
+                <a href="https://rblandonpinzon.dectim.ca/webjam/" target="_blank" class="bouton bouton_hero">Tester le site</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume">
+        <div class="wrapper">
+            <div class="infos-projets">
+                <h2 class="titre-resume" data-scrolly="revealFromTop">Un <span>résumé</span></h2>
+                <p class="texte_resume" data-scrolly="revealFromLeft">
+                    Le but de ce projet était d'intégré en site web une maquette qui venait faire la refonte du site de la
+                    Baie-St-Catherine. C'est donc un projet fictif qui avait pour but de nous introduire au différents
+                    composants javascript et au différente difficulté possible dans l'intégration html et css car nous avont
+                    travailler avec beacoup de nouveaux concepts que nous ne connaissions pas avant ce travail.
+                </p>
+            </div>
+            <div class="informations-projet" data-scrolly="revealFromRight">
+                <h2>Informations</h2>
+
+                <h4>Créateur du <span>projet</span></h4>
+                <p>Rito José Blandon Pinzon</p>
+
+                <h4>Logiciels <span>utilisés</span></h4>
+                <p>Vs code, Figma</p>
+
+                <h4>Compétences<span>utilisés</span></h4>
+                <p>Intégraton et programmation web</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-projet">
+        <div class="wrapper">
+            <h2 data-scrolly="revealFromLeft">Démo du <span> projet</span></h2>
+            <div class="video_presentation_projet">
+                <video autoplay loop data-scrolly="revealFromTop">
+                    <source src="assets/video/DemoSegaDBS.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="maquette">
+        <div class="wrapper">
+            <h2 data-scrolly="revealFromLeft">Création de la <span>maquette</span></h2>
+            <p data-scrolly="revealFromTop">
+                Pour la conception de la maquette, les professeurs nous avaient fourni différentes composantes de sections.
+                Nous pouvions donc choisir à notre convenance les différents section par rapport à la difficulté
+                d'intégration que tu pourrais rencontré.
+            </p>
+
+            <div class="frame-figma">
+                <iframe data-scrolly="revealFromRight" height="100%" width="100%" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/BFeivaM4LeLMvBuOL9BBtJ/1022-Blandon-Pinzon%2C-Rito-Jose?node-id=0-1&node-type=canvas&t=qjQyY5CeN8anB7HA-0" allowfullscreen class="frame-embed">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="integration">
+        <div class="wrapper">
+            <h2 data-scrolly="revealFromTop">De maquette à <span> intégration</span></h2>
+            <p data-scrolly="revealFromBottom">
+                Pour commencer dans ce projet j'ai directement intégré le header et le footer. Ce qui à été plus complexe
+                que ce que je pensais car c'était une des première fois que j'utilisais le compoenent javascript Header.
+                Pour la suite la majorité de l'intégration était bien éxécuté et j'ai pu en apprendre plus sur les forms ou
+                encore comment intégré des accordions avec du javascript. Puis c'était aussi la première fois que nous
+                utilisions des composantes javascript et donc un compoenent factory qui vient créer les composantes dans un
+                seul document javascript au lieu de le faire dans chaque script.
+            </p>
+            <div class="swiper swiper-integration" data-component="Carousel" data-autoplay data-scrolly="revealSectionFromRight">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="intergration_media">
+                            <img src="assets/images/baie-integration1.JPG" alt="image-integration" class="open-modale integration-image" data-component="ModaleIntegration" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="intergration_media">
+                            <img src="assets/images/baie-integration2.JPG" alt="image-integration" class="open-modale integration-image" data-component="ModaleIntegration" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="intergration_media">
+                            <img src="assets/images/baie-integration3.JPG" alt="image-integration" class="open-modale integration-image" data-component="ModaleIntegration" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="intergration_media">
+                            <img src="assets/images/baie-integration4.JPG" alt="image-integration" class="open-modale integration-image" data-component="ModaleIntegration" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modale-content integration">
+                <button class="modale-close">X</button>
+                <img src="assets/images/codeprojetsega1.jpg" alt="Image en grand" class="modale-image" />
+            </div>
+        </div>
+    </section>
+
+    <section class="code-projet">
+        <div class="wrapper">
+            <h2 data-scrolly="revealFromTop">Structure acf <span> acf</span></h2>
+            <div class="swiper swiper-code" data-component="Carousel" data-autoplay data-split data-slides="3" data-scrolly="revealSectionFromLeft">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media-swiper">
+                            <img src="assets/images/baie-code1.JPG" alt="image-code" class="open-modale code-image" data-component="ModaleCode" />
+                        </div>
+                        <div class="content-swiper">
+                            <h4>Script Accordion</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-swiper">
+                            <img src="assets/images/baie-code6.JPG" alt="image-code" class="open-modale code-image" data-component="ModaleCode" />
+                        </div>
+                        <div class="content-swiper">
+                            <h4>Script Component Factory</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-swiper">
+                            <img src="assets/images/baie-code2.JPG" alt="image-code" class="open-modale code-image" data-component="ModaleCode" />
+                        </div>
+                        <div class="content-swiper">
+                            <h4>Script Form</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-swiper">
+                            <img src="assets/images/baie-code3.JPG" alt="image-code" class="open-modale code-image" data-component="ModaleCode" />
+                        </div>
+                        <div class="content-swiper">
+                            <h4>Script Form(suite)</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-swiper">
+                            <img src="assets/images/baie-code4.JPG" alt="image-code" class="open-modale code-image" data-component="ModaleCode" />
+                        </div>
+                        <div class="content-swiper">
+                            <h4>Script Youtube</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media-swiper">
+                            <img src="assets/images/baie-code5.JPG" alt="image-code" class="open-modale code-image" data-component="ModaleCode" />
+                        </div>
+                        <div class="content-swiper">
+                            <h4>Script Youtube(suite)</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modale Structure -->
+
+            <div class="modale-content code">
+                <button class="modale-close">X</button>
+                <img src="assets/images/baistcatherine-mockup.png" alt="Image en grand" class="modale-image" />
+            </div>
+        </div>
+    </section>
+
+    <footer data-scrolly="revealSectionFromTop">
+        <div class="wrapper">
+
+
+            <div class="infos_footer">
+
+                <p class="copyright">Rito José Blandon Pinzon © Tout droits réservés 2024</p>
+
+                <ul class="reseaux_sociaux">
+
+
+
+                    <li>
+                        <a class="nav-icon" href="https://www.linkedin.com/in/rito-jos%C3%A9-blandon-pinzon-17909a2a1/" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="https://github.com/RitoBlandon" target="_blank">
+                            <svg class="icon icon--md">
+                                <use xlink:href="#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
