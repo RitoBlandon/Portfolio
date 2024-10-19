@@ -24,7 +24,6 @@
         .card_media {
             overflow: hidden;
 
-            object-fit: cover;
             z-index: 3;
             @media screen and (max-width: 1115px) {
                 width: 100%;
@@ -32,7 +31,6 @@
             img {
                 width: 840px;
                 height: 500px;
-                object-fit: cover;
                 display: block;
                 border-radius: 15px;
                 z-index: 5;
