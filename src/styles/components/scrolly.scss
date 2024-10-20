@@ -193,7 +193,7 @@
 
         &.is-active {
             clip-path: inset(0 0 0 0); /* Texte complètement révélé */
-            animation: revealFromTop 2s ease forwards; /* Animation à l'activation */
+            animation: revealFromTop 1s ease forwards; /* Animation à l'activation */
         }
     }
     [data-scrolly='revealSectionFromTop'] {

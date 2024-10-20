@@ -6,4 +6,8 @@ body {
     span {
         color: var(--color-primary);
     }
+
+    a {
+        text-decoration: none !important;
+    }
 }

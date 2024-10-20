@@ -4,6 +4,7 @@ import Youtube from './components/Youtube';
 import Form from './components/Form';
 import Modale from './components/Modale';
 import Scrolly from './components/Scrolly';
+import Accordion from './components/Accordion';
 
 export default class ComponentFactory {
   constructor() {
@@ -15,6 +16,7 @@ export default class ComponentFactory {
       Youtube,
       Modale,
       Scrolly,
+      Accordion,
     };
     this.init();
   }
