@@ -2,20 +2,24 @@
     img {
         width: 100%;
     }
-}
+    .swiper-pagination {
+        --swiper-pagination-bullet-inactive-color: var(--color-primary);
+        --swiper-pagination-color: var(--color-primary);
+        --swiper-pagination-bullet-width: 22px;
+        --swiper-pagination-bullet-height: 22px;
+        padding-top: 40px;
+        position: static;
+        z-index: 2;
 
-.swiper-maquette {
-    .swiper-slide {
-        width: 180%;
-
-        height: 100%;
-
-        img {
-            width: 100%;
-            display: block;
-            height: 80vh;
-            object-fit: cover;
-            cursor: pointer;
+        .swiper-pagination-bullet {
+            border: 4px var(--color-primary) solid;
+            background: none;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            border: 4px var(--color-primary) solid;
+            background-color: var(--color-primary);
+            opacity: 1;
         }
     }
 }

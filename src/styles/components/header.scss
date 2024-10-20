@@ -24,6 +24,11 @@ header {
         margin: 0;
         font-weight: bolder;
         text-decoration: none;
+        transition: all 0.5s $ease-out-expo;
+        &:hover {
+            transition: all 0.5s $ease-out-expo;
+            transform: scale(1.2);
+        }
     }
 
     .wrapper {
