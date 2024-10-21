@@ -27,13 +27,13 @@ footer {
                 gap: 16px;
                 list-style: none;
                 padding: 0;
+
                 .nav-icon {
                     border-radius: 50%;
                     padding: var(--spacing-sm);
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
                     -webkit-transition: background-position 1s;
                     -moz-transition: background-position 1s;
                     transition: background-position 1s;
@@ -41,11 +41,9 @@ footer {
                         color: var(--color-white);
                     }
                     &:hover {
-                        background-position: 0 -90%;
-                        color: var(--color-white);
-                        border-radius: 50%;
+                        transform: scale(1.2);
                         svg {
-                            color: white;
+                            color: var(--color-primary);
                         }
                     }
                 }
