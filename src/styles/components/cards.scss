@@ -38,6 +38,9 @@
                     width: 100%;
                     border-radius: 0px;
                 }
+                @media screen and (max-width: $breakpoint-xs) {
+                    height: 335px;
+                }
             }
         }
 
@@ -76,6 +79,7 @@
             @media screen and (max-width: $breakpoint-xs) {
                 text-align: center;
                 padding-top: 50px;
+                height: 380px;
             }
 
             .plus_infos {
