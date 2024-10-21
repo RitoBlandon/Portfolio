@@ -2,7 +2,7 @@ export default class Scrolly {
   constructor(element) {
     this.element = element;
     this.options = {
-      rootMargin: '0px 0px',
+      rootMargin: '-30px 0px',
       repeat: 'true',
     };
 
