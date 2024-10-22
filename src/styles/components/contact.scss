@@ -38,5 +38,8 @@
         margin: 0;
         padding-bottom: 105px;
         color: var(--color-white);
+        @media screen and (max-width: $breakpoint-md) {
+            text-align: center;
+        }
     }
 }
