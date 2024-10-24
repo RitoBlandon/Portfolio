@@ -38,6 +38,9 @@
                 font-size: 36px;
                 font-family: var(--font-primary);
                 margin-bottom: 25px;
+                @media screen and (max-width: $breakpoint-md) {
+                    font-size: 24px;
+                }
             }
         }
 

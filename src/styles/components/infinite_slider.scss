@@ -56,3 +56,128 @@
     height: 150px;
     margin: 0 40px;
 }
+
+/* Style général */
+.logos {
+    overflow: hidden;
+    padding: 75px 0;
+    background: var(--color-black);
+    white-space: nowrap;
+    position: relative;
+}
+
+/* Animation des logos */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 150px;
+    margin: 0 40px;
+}
+
+/* Ajustement pour mobile */
+@media screen and (max-width: 375px) {
+    /* Ajuste le conteneur principal pour mobile */
+    .logos {
+        white-space: nowrap;
+        overflow: hidden; /* Garde les logos dans les limites du conteneur */
+    }
+
+    /* Ajuste la taille des logos et l'animation */
+    .logos-slide {
+        display: inline-block;
+        animation: 20s slide infinite linear; /* Allonge la durée de l'animation pour mobile */
+        width: max-content; /* Assure que les logos prennent la place qu'ils nécessitent */
+    }
+
+    .logos-slide img {
+        height: 50px; /* Réduis la taille des logos sur mobile */
+        margin: 0 10px; /* Moins d'espacement entre les logos */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Conteneur principal */
+    .logos {
+        white-space: nowrap;
+        overflow: hidden; /* Masque tout débordement */
+    }
+
+    /* Animation et ajustement des logos */
+    .logos-slide {
+        display: inline-block;
+        animation: 15s slide infinite linear; /* Animation un peu plus longue sur tablette */
+        width: max-content; /* Ajuste la largeur au contenu */
+    }
+
+    .logos-slide img {
+        height: 100px; /* Taille adaptée à la tablette */
+        margin: 0 20px; /* Espacement plus réduit que sur grand écran, mais plus large que sur mobile */
+    }
+}
+@media screen and (max-width: 1024px) {
+    /* Conteneur principal */
+    .logos {
+        white-space: nowrap;
+        overflow: hidden; /* Masque tout débordement */
+    }
+
+    /* Animation et ajustement des logos */
+    .logos-slide {
+        display: inline-block;
+        animation: 12s slide infinite linear; /* Animation ajustée à 12s pour 1024px */
+        width: max-content; /* Ajuste la largeur au contenu */
+    }
+
+    .logos-slide img {
+        height: 120px; /* Taille des logos adaptée aux grands écrans (1024px) */
+        margin: 0 30px; /* Ajustement de l'espacement entre les logos */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .logos {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .logos-slide {
+        display: inline-block;
+        animation: 12s slide infinite linear;
+        width: max-content;
+    }
+
+    .logos-slide img {
+        height: 120px;
+        margin: 0 30px;
+    }
+}
+
+/* Ajustements pour 1440px */
+@media screen and (max-width: 1440px) {
+    .logos {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .logos-slide {
+        display: inline-block;
+        animation: 10s slide infinite linear; /* Ajustement de la durée pour 1440px */
+        width: max-content;
+    }
+
+    .logos-slide img {
+        height: 150px; /* Taille des logos plus grande pour écrans larges */
+        margin: 0 40px; /* Espacement confortable sur grand écran */
+    }
+}

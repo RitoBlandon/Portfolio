@@ -39,7 +39,7 @@
                     border-radius: 0px;
                 }
                 @media screen and (max-width: $breakpoint-xs) {
-                    height: 335px;
+                    height: 300px;
                 }
             }
         }
@@ -232,6 +232,11 @@
 
         @media screen and (max-width: $breakpoint-sm) {
             width: 75%;
+            align-items: center;
+            text-align: center;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            width: 100%;
             align-items: center;
             text-align: center;
         }

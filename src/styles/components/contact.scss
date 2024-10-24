@@ -19,16 +19,28 @@
             padding-left: 125px;
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 50px;
+            width: 100%;
             @media screen and (max-width: $breakpoint-md) {
                 text-align: center;
                 padding: 0;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
+                text-align: center;
+                padding: 0;
+                width: 100%;
             }
             h4 {
                 padding-bottom: 35px;
             }
             p {
                 font-size: 28px;
+                width: 100%;
+                @media screen and (max-width: $breakpoint-xs) {
+                    text-align: center;
+                    font-size: 22px;
+                }
             }
         }
     }
