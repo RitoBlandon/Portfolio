@@ -77,7 +77,7 @@
                 @media screen and (max-width: 1050px) {
                     width: 70vw;
                 }
-                @media screen and (max-width: $breakpoint-sm) {
+                @media screen and (max-width: 890px) {
                     width: 95vw;
                 }
                 @media screen and (max-width: $breakpoint-xs) {
@@ -91,6 +91,9 @@
 .hero-a-propos {
     background-color: var(--color-black);
     height: 100%;
+    @media screen and (max-width: 890px) {
+        height: 70vh;
+    }
     @media screen and (max-width: $breakpoint-xs) {
         height: 60vh;
     }
@@ -99,19 +102,28 @@
         grid-template-columns: repeat(2, 1fr);
         color: var(--color-white);
         gap: 75px;
-        @media screen and (max-width: $breakpoint-md) {
+        @media screen and (max-width: 890px) {
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
             gap: 50px;
             align-items: flex-end;
         }
-        @media screen and (max-width: $breakpoint-xs) {
+
+        @media screen and (max-width: 890px) {
             flex-direction: column;
             justify-content: flex-start;
             align-items: center; /* Centrer le contenu horizontalement */
             gap: 0; /* Supprimer tout écart pour occuper toute la largeur */
 
+            .titre_contact {
+                font-size: 40px !important;
+            }
+            .sous_titre_hero {
+                font-size: 20px !important;
+            }
+        }
+        @media screen and (max-width: $breakpoint-xs) {
             .titre_contact {
                 font-size: 24px !important;
             }
@@ -130,14 +142,18 @@
             max-height: 100%;
 
             object-fit: cover;
-            @media screen and (max-width: $breakpoint-xs) {
+            @media screen and (max-width: 890px) {
                 position: absolute;
                 top: 0;
+                left: 65%;
+            }
+            @media screen and (max-width: 700px) {
                 left: 60%;
             }
+            @media screen and (max-width: 600px) {
+                left: 55%;
+            }
             @media screen and (max-width: 375px) {
-                position: absolute;
-                top: 0;
                 left: 45%;
             }
             img {
@@ -145,10 +161,12 @@
 
                 height: 100%;
                 object-fit: cover;
-                @media screen and (max-width: $breakpoint-md) {
-                    height: 85%;
+
+                @media screen and (max-width: 890px) {
+                    height: 330px;
+                    width: 240px;
                 }
-                @media screen and (max-width: $breakpoint-md) {
+                @media screen and (max-width: $breakpoint-xs) {
                     height: 250px;
                     width: 185px;
                 }
@@ -163,7 +181,7 @@
             @media screen and (max-width: $breakpoint-md) {
                 width: auto;
             }
-            @media screen and (max-width: $breakpoint-xs) {
+            @media screen and (max-width: 890px) {
                 width: 100%; /* Assurer une pleine largeur sur mobile */
                 justify-content: flex-start;
                 align-items: flex-start; /* Centrer le contenu */
@@ -171,7 +189,7 @@
             }
             .sous_titre_hero {
                 font-size: 48px;
-                @media screen and (max-width: $breakpoint-xs) {
+                @media screen and (max-width: 890px) {
                     text-align: left;
                     width: 100%;
                 }
@@ -184,7 +202,7 @@
             }
 
             .a-propos-hero {
-                @media screen and (max-width: $breakpoint-xs) {
+                @media screen and (max-width: 890px) {
                     width: 100%; /* Pleine largeur pour les titres sur mobile */
                     text-align: left; /* Centrer le texte */
                 }
@@ -201,7 +219,7 @@
                 @media screen and (max-width: $breakpoint-md) {
                     font-size: 30px;
                 }
-                @media screen and (max-width: $breakpoint-xs) {
+                @media screen and (max-width: 890px) {
                     width: 100%; /* Pleine largeur pour les titres sur mobile */
                     text-align: left; /* Centrer le texte */
                 }
