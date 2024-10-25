@@ -91,6 +91,9 @@
 .hero-a-propos {
     background-color: var(--color-black);
     height: 100%;
+    @media screen and (max-width: $breakpoint-xs) {
+        height: 60vh;
+    }
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -98,13 +101,19 @@
         gap: 75px;
         @media screen and (max-width: $breakpoint-md) {
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             justify-content: space-between;
             gap: 50px;
+            align-items: flex-end;
         }
         @media screen and (max-width: $breakpoint-xs) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center; /* Centrer le contenu horizontalement */
+            gap: 0; /* Supprimer tout écart pour occuper toute la largeur */
+
             .titre_contact {
-                font-size: 24px;
+                font-size: 24px !important;
             }
             .sous_titre_hero {
                 font-size: 20px !important;
@@ -121,6 +130,16 @@
             max-height: 100%;
 
             object-fit: cover;
+            @media screen and (max-width: $breakpoint-xs) {
+                position: absolute;
+                top: 0;
+                left: 60%;
+            }
+            @media screen and (max-width: 375px) {
+                position: absolute;
+                top: 0;
+                left: 45%;
+            }
             img {
                 display: block;
 
@@ -128,6 +147,10 @@
                 object-fit: cover;
                 @media screen and (max-width: $breakpoint-md) {
                     height: 85%;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    height: 250px;
+                    width: 185px;
                 }
             }
         }
@@ -140,15 +163,31 @@
             @media screen and (max-width: $breakpoint-md) {
                 width: auto;
             }
+            @media screen and (max-width: $breakpoint-xs) {
+                width: 100%; /* Assurer une pleine largeur sur mobile */
+                justify-content: flex-start;
+                align-items: flex-start; /* Centrer le contenu */
+                text-align: center; /* Centrer le texte */
+            }
             .sous_titre_hero {
                 font-size: 48px;
                 @media screen and (max-width: $breakpoint-xs) {
-                    text-align: center;
+                    text-align: left;
                     width: 100%;
                 }
             }
             .info_hero {
                 width: 45vw;
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 100%;
+                }
+            }
+
+            .a-propos-hero {
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 100%; /* Pleine largeur pour les titres sur mobile */
+                    text-align: left; /* Centrer le texte */
+                }
             }
 
             .titre_contact {
@@ -161,6 +200,10 @@
                 }
                 @media screen and (max-width: $breakpoint-md) {
                     font-size: 30px;
+                }
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 100%; /* Pleine largeur pour les titres sur mobile */
+                    text-align: left; /* Centrer le texte */
                 }
             }
         }

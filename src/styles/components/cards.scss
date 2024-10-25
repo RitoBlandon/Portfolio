@@ -64,6 +64,13 @@
                     width: 50px;
                 }
             }
+
+            .type_projet {
+                @media screen and (max-width: $breakpoint-xs) {
+                    padding: 0;
+                }
+            }
+
             &:hover {
                 transition: all 0.4s $ease-out-expo;
                 transform: translateX(10%) scale(1.02);
@@ -123,6 +130,9 @@
                 padding-bottom: 35px;
                 font-size: 24px;
                 width: 90%;
+                @media screen and (max-width: $breakpoint-xs) {
+                    padding-bottom: 25px;
+                }
             }
             .infos_projets {
                 display: flex;
@@ -140,7 +150,7 @@
                         width: 50px;
                         aspect-ratio: 1/1;
 
-                        @media screen and (max-width: 375px) {
+                        @media screen and (max-width: $breakpoint-xs) {
                             width: 40px;
                         }
                     }
@@ -164,7 +174,7 @@
                     padding-bottom: 65px;
                 }
                 @media screen and (max-width: $breakpoint-xs) {
-                    padding-bottom: 50px;
+                    padding-bottom: 30px;
                 }
             }
 
