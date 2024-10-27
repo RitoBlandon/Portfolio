@@ -1,6 +1,9 @@
 .maquette {
     padding: 100px 0;
     height: 100%;
+    @media screen and (max-width: $breakpoint-xs) {
+        text-align: center;
+    }
 
     h2,
     p {
@@ -12,12 +15,18 @@
     }
     p {
         padding-bottom: 65px;
-        font-size: 24px;
+        font-size: var(--font-size-content);
     }
 
     .frame-figma {
         width: 100%;
         height: 800px;
+        @media screen and (max-width: $breakpoint-sm) {
+            height: 520px !important;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            height: 465px !important;
+        }
         iframe {
             width: 100%;
             height: 100%;

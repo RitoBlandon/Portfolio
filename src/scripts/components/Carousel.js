@@ -24,7 +24,7 @@ export default class Carousel {
       this.options.breakpoints = {
         1440: { slidesPerView: 3 },
         768: { slidesPerView: 2 },
-        480: { slidesPerView: 1 },
+        375: { slidesPerView: 1 },
       };
     }
     if ('autoplay' in this.element.dataset) {

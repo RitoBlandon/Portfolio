@@ -6,7 +6,6 @@
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'PT Sans', sans-serif;
 
-    --font-size-content: 1.8rem;
     --font-size-sous-titre-hero: #{typo(28px, 48px)};
 
     /// Grosseur des textes
@@ -14,4 +13,5 @@
     --font-size-h2: #{typo(28px, 54px)};
     --font-size-h3: 3.5rem;
     --font-size-h4: #{typo(24px, 28px)};
+    --font-size-content: #{typo(14px, 24px)};
 }
