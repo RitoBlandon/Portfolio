@@ -31,16 +31,30 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 998;
-    img {
-        top: 50%;
-        position: absolute;
-        max-height: 92vh;
-        max-width: 94vw;
-        display: block;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -o-object-fit: cover;
-        object-fit: cover;
+}
+
+/* Ajoutez ces styles pour l'image dans la modale */
+.modale-content img {
+    max-width: 90vw; /* Limite la largeur pour s'adapter aux petits écrans */
+    max-height: 90vh; /* Limite la hauteur à 90% de la hauteur de la vue */
+    width: auto; /* Laisse l'image s'ajuster en fonction de la largeur max */
+    height: auto; /* Assure que la hauteur est proportionnelle */
+    object-fit: contain; /* Contient l'image sans la déformer */
+}
+
+/* Règles pour les écrans de 480px et moins */
+@media (max-width: 480px) {
+    .modale-content img {
+        max-width: 85vw; /* Ajuste encore la largeur pour les petits écrans */
+        max-height: 75vh; /* Limite davantage la hauteur pour éviter les débordements */
+    }
+}
+
+/* Règles pour les écrans de 375px et moins */
+@media (max-width: 375px) {
+    .modale-content img {
+        max-width: 80vw; /* Limite la largeur pour les très petits écrans */
+        max-height: 70vh; /* Limite la hauteur à 70% pour un affichage optimal */
     }
 }
 
