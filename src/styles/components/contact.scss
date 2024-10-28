@@ -34,9 +34,11 @@
             h4 {
                 padding-bottom: 35px;
             }
-            p {
+            .infos-contact {
                 font-size: 28px;
                 width: 100%;
+                color: var(--color-white);
+
                 @media screen and (max-width: $breakpoint-xs) {
                     text-align: center;
                     font-size: 22px;
@@ -54,4 +56,9 @@
             text-align: center;
         }
     }
+}
+
+.telephone_rito,
+.courriel_rito {
+    max-width: fit-content;
 }

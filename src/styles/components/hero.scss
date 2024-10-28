@@ -243,6 +243,7 @@
             }
 
             .a-propos-hero {
+                font-family: var(--font-primary);
                 @media screen and (max-width: 890px) {
                     width: 100%; /* Pleine largeur pour les titres sur mobile */
                     text-align: left; /* Centrer le texte */
