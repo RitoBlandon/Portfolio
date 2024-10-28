@@ -63,13 +63,14 @@
         z-index: 0; /* Place derrière le texte */
         border-radius: 8px; /* Coins arrondis */
         @media screen and (max-width: 1728px) {
-            height: 25%;
+            height: 40%;
         }
         @media screen and (max-width: 1575px) {
             width: 70vw;
         }
         @media screen and (max-width: 1175px) {
             width: 80vw;
+            height: 35%;
         }
         @media screen and (max-width: 890px) {
             width: 95vw;
