@@ -29,6 +29,7 @@
             width: 75%;
             line-height: 150%;
             font-size: 20px;
+            font-weight: 400 !important;
             @media screen and (max-width: $breakpoint-sm) {
                 width: 100%;
                 line-height: normal;

@@ -16,6 +16,7 @@
         }
         p {
             font-size: var(--font-size-content);
+            font-weight: 400 !important;
         }
 
         .titre-resume {
@@ -30,6 +31,16 @@
             justify-content: flex-start;
             flex-direction: column;
             gap: 30px;
+            .competences-utilises,
+            .logiciels,
+            .creation {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            p {
+                font-weight: 400;
+            }
         }
     }
 }

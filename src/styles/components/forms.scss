@@ -40,7 +40,7 @@ textarea {
     border: 1px solid black;
 
     cursor: pointer;
-    font-family: inherit;
+    font-family: var(--font-primary);
     padding: var(--input-padding);
     outline: none;
     width: 100%;
