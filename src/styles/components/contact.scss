@@ -19,9 +19,9 @@
             padding-left: 125px;
             display: flex;
             flex-direction: column;
-
             gap: 50px;
             width: 100%;
+
             @media screen and (max-width: $breakpoint-md) {
                 text-align: center;
                 padding: 0;
@@ -39,6 +39,9 @@
                 font-size: 28px;
                 width: 100%;
                 color: var(--color-white);
+                p {
+                    font-weight: 400 !important;
+                }
 
                 @media screen and (max-width: $breakpoint-xs) {
                     text-align: center;
