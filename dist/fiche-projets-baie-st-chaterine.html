@@ -2,6 +2,17 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG769FVZQM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-SG769FVZQM');
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rito José Blandon Pinzon</title>
@@ -28,9 +39,15 @@
 
 
                 <ul class="menu">
-                    <li><a class="nav-item underline--animation" href="mes-projets.html">Mes projets</a></li>
-                    <li><a class="nav-item underline--animation" href="a-propos.html">À propos</a></li>
-                    <li><a class="nav-item underline--animation" href="contact.html">Contact</a></li>
+                    <li>
+                        <a class="nav-item underline--animation" aria-label="Lien projets" href="mes-projets.html">Mes projets</a>
+                    </li>
+                    <li>
+                        <a class="nav-item underline--animation" aria-label="Lien à propos" href="a-propos.html">À propos</a>
+                    </li>
+                    <li>
+                        <a class="nav-item underline--animation" aria-label="Lien contact" href="contact.html">Contact</a>
+                    </li>
                 </ul>
 
 
@@ -65,7 +82,7 @@
                     <p data-scrolly="revealFromTop" class="sous_titre_hero">Projet scolaire | Design et intégration web</p>
                 </div>
 
-                <a href="https://ritoblandon.ca/projets/baie-st-catherine/" target="_blank" class="custom-btn btn-14 btn-hero">Tester le site</a>
+                <a href="https://ritoblandon.ca/projets/baie-st-catherine/" target="_blank" aria-label="Lien site baie-st-catherine refonte" class="custom-btn btn-14 btn-hero">Tester le site</a>
             </div>
         </div>
     </section>
@@ -322,14 +339,14 @@
 
 
                     <li>
-                        <a class="nav-icon" href="https://www.linkedin.com/in/rito-jos%C3%A9-blandon-pinzon-17909a2a1/" target="_blank">
+                        <a class="nav-icon" aria-label="Lien Linked-in" href="https://www.linkedin.com/in/rito-jos%C3%A9-blandon-pinzon-17909a2a1/" target="_blank">
                             <svg class="icon icon--md">
                                 <use xlink:href="#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-icon" href="https://github.com/RitoBlandon" target="_blank">
+                        <a class="nav-icon" aria-label="Lien github" href="https://github.com/RitoBlandon" target="_blank">
                             <svg class="icon icon--md">
                                 <use xlink:href="#icon-github"></use>
                             </svg>

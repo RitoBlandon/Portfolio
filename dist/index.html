@@ -2,6 +2,17 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG769FVZQM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-SG769FVZQM');
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rito José Blandon Pinzon</title>
@@ -28,9 +39,15 @@
 
 
                 <ul class="menu">
-                    <li><a class="nav-item underline--animation" href="mes-projets.html">Mes projets</a></li>
-                    <li><a class="nav-item underline--animation" href="a-propos.html">À propos</a></li>
-                    <li><a class="nav-item underline--animation" href="contact.html">Contact</a></li>
+                    <li>
+                        <a class="nav-item underline--animation" aria-label="Lien projets" href="mes-projets.html">Mes projets</a>
+                    </li>
+                    <li>
+                        <a class="nav-item underline--animation" aria-label="Lien à propos" href="a-propos.html">À propos</a>
+                    </li>
+                    <li>
+                        <a class="nav-item underline--animation" aria-label="Lien contact" href="contact.html">Contact</a>
+                    </li>
                 </ul>
 
 
@@ -68,7 +85,7 @@
                     <p data-scrolly="revealFromTop" class="sous_titre_hero">Développeur web <span>junior</span></p>
                 </div>
 
-                <a href="mes-projets.html" class="custom-btn btn-14 btn-hero">Voir mes projets</a>
+                <a href="mes-projets.html" aria-label="Lien pages projets" class="custom-btn btn-14 btn-hero">Voir mes projets</a>
             </div>
         </div>
     </section>
@@ -77,7 +94,7 @@
         <div class="wrapper">
             <h2 data-scrolly="revealFromBottom">Mes <span>projets</span></h2>
             <div class="cards cards_accueil">
-                <a class="card" href="fiche-projets-sega.html">
+                <a class="card" href="fiche-projets-sega.html" aria-label="Lien page projet individuelle sega">
                     <div class="card_content card_content_gauche" data-scrolly="fromLeft">
                         <h3 class="titre_projet">Console SEGA DBS</h3>
                         <p class="sous_titre_projets">Design de maquette et intégration web</p>
@@ -102,7 +119,7 @@
                         <img src="assets/images/mockupsegafinal.webp" alt="mockup-sega" />
                     </div>
                 </a>
-                <a class="card card_inverse" href="fiche-projets-baie-st-chaterine.html">
+                <a class="card card_inverse" aria-label="Lien page projet individuelle baie-st-catherine" href="fiche-projets-baie-st-chaterine.html">
                     <div class="card_media" data-scrolly="fromLeft">
                         <img src="assets/images/mockupbaie.webp" alt="mockup-baie" />
                     </div>
@@ -126,19 +143,19 @@
                         </div>
                     </div>
                 </a>
-                <a class="card" href="fiche-projets-tim-esports.html">
+                <a class="card" href="fiche-projets-tim-esports.html" aria-label="Lien page projet individuelle tim esports">
                     <div class="card_content card_content_gauche" data-scrolly="fromLeft">
-                        <h3 class="titre_projet">Tim esports</h3>
-                        <p class="sous_titre_projets">Design de maquette et intégration web</p>
+                        <h3 class="titre_projet">Morphix Webjam</h3>
+                        <p class="sous_titre_projets">Intégration et programmation web</p>
                         <p class="projets_texte">
-                            Intégration d'une maquette de compagnie esport fictive en HTML, CSS et JavaScript.
+                            Création d'un site web pour une entreprise de transport futuriste en une fin de semaine.
                         </p>
                         <div class="infos_projets">
                             <p class="type_projet">Projet Scolaire</p>
                             <div class="logiciels_projets">
                                 <img src="assets/images/html.png" alt="html_logo" />
                                 <img src="assets/images/css.png" alt="css_logo" />
-                                <img src="assets/images/javascript.png" alt="js_logo" />
+                                <img src="assets/images/javascript.png" alt="js_logo" /><img src="assets/images/wp.png" alt="wp_logo" />
                             </div>
                         </div>
                         <div class="plus_infos">
@@ -147,12 +164,12 @@
                         </div>
                     </div>
                     <div class="card_media" data-scrolly="fromRight">
-                        <img src="assets/images/etimmockup.webp" alt="mockup-etim" />
+                        <img src="assets/images/mockupwebjam.webp" alt="mockup-webjam" />
                     </div>
                 </a>
             </div>
             <div class="lien_projets">
-                <a href="mes-projets.html" class="custom-btn btn-14">Plus de projets</a>
+                <a href="mes-projets.html" class="custom-btn btn-14" aria-label="Lien page projets">Plus de projets</a>
             </div>
         </div>
     </section>
@@ -170,14 +187,14 @@
 
 
                     <li>
-                        <a class="nav-icon" href="https://www.linkedin.com/in/rito-jos%C3%A9-blandon-pinzon-17909a2a1/" target="_blank">
+                        <a class="nav-icon" aria-label="Lien Linked-in" href="https://www.linkedin.com/in/rito-jos%C3%A9-blandon-pinzon-17909a2a1/" target="_blank">
                             <svg class="icon icon--md">
                                 <use xlink:href="#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-icon" href="https://github.com/RitoBlandon" target="_blank">
+                        <a class="nav-icon" aria-label="Lien github" href="https://github.com/RitoBlandon" target="_blank">
                             <svg class="icon icon--md">
                                 <use xlink:href="#icon-github"></use>
                             </svg>
